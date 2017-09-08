@@ -38,7 +38,7 @@ mognodb 3.0+
 > npm install 
 > npm start
 ```
-### 主要功能
+### 简要概述
 
 #### 1. 全部使用ES6语法，aysnc+await结构
 #### 2. 通过mongoose模块+promise模块操作mongodb数据库
