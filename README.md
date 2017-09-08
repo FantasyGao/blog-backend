@@ -1,10 +1,10 @@
 
 ## 前后端分离实践----blog's backend
-## 前后端分离实践---- [blog's frontend](https://github.com/FantasyGao/blog-frontend.git)
+### 前端地址---- [blog's frontend](https://github.com/FantasyGao/blog-frontend.git)
 
-### 简介:通过vue.js框架与koa2框架分别搭建前后端，利用ngnix端口分发部署实现代码全分离，开发全分离。
+#### 简介:通过vue.js框架与koa2框架分别搭建前后端，利用ngnix端口分发部署实现代码全分离，开发全分离。
 
-### nginx文件配置内容
+#### nginx文件配置内容
  ```
      server {
         listen       80;
@@ -22,11 +22,16 @@
     }
  ```
 
-### Getting Start
+#### Getting Start
 
-#### 1. 博客依赖于mongodb数据库
+##### 1. 开发环境
+ ```
+node.js 7.6+
+mognodb 3.0+
+```
+##### 2. 博客依赖于mongodb数据库
        先安装 [mongodb](https://www.mongodb.com/) 数据库，安装完成后运行数据库，开启27017（默认）端口
-#### 2. 克隆到本地，安装依赖，运行
+##### 3. 克隆到本地，安装依赖，运行
 ```
 > git clone https://github.com/FantasyGao/blog-backend.git
 > cd blog-backend
