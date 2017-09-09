@@ -1079,6 +1079,7 @@ const getReturnArticle = (data) => {
         obj.classic = data.classic
         obj.content = data.content
         obj.author = data.author
+        obj.imgUrl = data.imgUrl
     }
     obj.markList = []
     data.markList.forEach((item,i)=>{
