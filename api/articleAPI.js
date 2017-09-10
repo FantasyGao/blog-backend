@@ -706,6 +706,9 @@ exports.SEARCH_CLASS_INFO_API = async(ctx,next)=>{
     let info = {classic:getParams.classic}
     let count = parseInt(getParams.count?getParams.count:0)
     let sortWay =  {time:getParams.time?getParams.time:1}
+    if (getParams.show) {
+        info.show = 1
+    }
     try {
         await ArticleModel.find(info).limit(count).sort(sortWay).exec()
         .then((data) => {
@@ -727,6 +730,9 @@ exports.SEARCH_TAG_INFO_API = async(ctx,next)=>{
     let info = {'tag.tagId':{$in:getParams.tag}}
     let count = parseInt(getParams.count?getParams.count:0)
     let sortWay =  {time:getParams.time?getParams.time:1}
+    if (getParams.show) {
+        info.show = 1
+    }
     try {
         await ArticleModel.find(info).limit(count).sort(sortWay).exec()
         .then((data) => {
