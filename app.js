@@ -45,7 +45,7 @@ app.use(api.routes(),api.allowedMethods());
 
 // error logger
 app.on('error',(err, ctx) => {
-  console.log('error occured:', err)
+  console.log('error occurred:', err)
 });
 
 let options = {
